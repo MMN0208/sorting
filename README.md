@@ -13,7 +13,7 @@ public:
 4.    void selectionSort(T *start, T *end);
 5.    void bubbleSort(T *start, T *end);
 6.    void quickSort(T *start, T *end);
-7.    void mergeSort(T *start, T *end);\
+7.    void mergeSort(T *start, T *end);
 
 }
 
