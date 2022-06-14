@@ -5,6 +5,7 @@ The following sorting algorithms are available:
 
 template "class T"\
 class Sorting {\
+
 public:
 1.    void printArray(T *start, T *end);
 2.    void insertionSort(T *start, T *end);
@@ -13,7 +14,8 @@ public:
 5.    void bubbleSort(T *start, T *end);
 6.    void quickSort(T *start, T *end);
 7.    void mergeSort(T *start, T *end);\
-\noindent}
+
+}
 
 Note:
 - T *start is the first element of the array, T *end is the element after the last element of the array.
