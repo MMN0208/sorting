@@ -4,7 +4,7 @@ Sorting algorithms
 The following sorting algorithms are available: 
 
 template "class T"\
-class Sorting {\
+class Sorting {
 
 public:
 1.    void printArray(T *start, T *end);
