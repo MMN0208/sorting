@@ -6,7 +6,7 @@ The following sorting algorithms are available:
 template <class T>
 class Sorting {
 public:
-    void printArray(T *start, T *end);
+    \nvoid printArray(T *start, T *end);
     void insertionSort(T *start, T *end);
     void shellSort(T *start, T *end, int *seg_array, int n);
     void selectionSort(T *start, T *end);
