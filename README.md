@@ -3,16 +3,16 @@ Sorting algorithms
 
 The following sorting algorithms are available: 
 
-template <class T>
-class Sorting {
+template "class T"\
+class Sorting {\
 public:
-    \nvoid printArray(T *start, T *end);
-    void insertionSort(T *start, T *end);
-    void shellSort(T *start, T *end, int *seg_array, int n);
-    void selectionSort(T *start, T *end);
-    void bubbleSort(T *start, T *end);
-    void quickSort(T *start, T *end);
-    void mergeSort(T *start, T *end);
+1.    void printArray(T *start, T *end);
+2.    void insertionSort(T *start, T *end);
+3.    void shellSort(T *start, T *end, int *seg_array, int n);
+4.    void selectionSort(T *start, T *end);
+5.    void bubbleSort(T *start, T *end);
+6.    void quickSort(T *start, T *end);
+7.    void mergeSort(T *start, T *end);
 }
 
 Note:
