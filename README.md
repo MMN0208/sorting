@@ -3,7 +3,7 @@ Sorting algorithms
 
 The following sorting algorithms are available: 
 
-template<class T>
+template <class T>
 class Sorting {
 public:
     void printArray(T *start, T *end);
