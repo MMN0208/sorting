@@ -7,12 +7,14 @@ class Sorting {
     T *partition(T *start, T *end);
     void merge(T *left, T *middle, T *right);
     void swap(T *a, T *b);
+    void reheapDown(T *start, T *end, int position);
 public:
     void printArray(T *start, T *end);
     void insertionSort(T *start, T *end);
     void shellSort(T *start, T *end, int *seg_array, int n);
     void selectionSort(T *start, T *end);
     void bubbleSort(T *start, T *end);
+    void heapSort( T *start, T *end);
     void quickSort(T *start, T *end);
     void mergeSort(T *start, T *end);
 };

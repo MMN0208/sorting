@@ -105,6 +105,44 @@ void Sorting<T>::bubbleSort(T *start, T *end) {
 }
 
 template <class T>
+void Sorting<T>::reheapDown(T *start, T *end, int position) {
+    long length = end - start;
+    if(length > 1) {
+        int leftChild = position * 2 + 1;
+        int rightChild = position * 2 + 2;
+        int largeChild = position;
+        if(leftChild < length) {
+            if(rightChild < length && start[rightChild] > start[leftChild]) {
+                largeChild = rightChild;
+            }
+            else {
+                largeChild = leftChild;
+            }
+        }
+        if(start[largeChild] > start[position]) {
+            swap(&start[largeChild], &start[position]);
+            reheapDown(start, end, largeChild);
+        }
+    }
+    return;
+}
+
+template <class T>
+void Sorting<T>::heapSort(T *start, T *end) {
+    long length = end - start;
+    if(length > 1) {
+        for(long i = length / 2; i >= 0; i--) {
+            reheapDown(start, end, i);
+        }
+        for(long i = length - 1; i > 0; i--) {
+            swap(&start[0], &start[i]);
+            reheapDown(start, start + i, 0);
+        }
+    }
+    return;
+}
+
+template <class T>
 T *Sorting<T>::partition(T *start, T *end) {
     T pivot = start[0];
     T *left = start - 1;
