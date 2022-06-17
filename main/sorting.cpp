@@ -131,7 +131,7 @@ template <class T>
 void Sorting<T>::heapSort(T *start, T *end) {
     long length = end - start;
     if(length > 1) {
-        for(long i = length / 2; i >= 0; i--) {
+        for(long i = length / 2 - 1; i >= 0; i--) {
             reheapDown(start, end, i);
         }
         for(long i = length - 1; i > 0; i--) {
