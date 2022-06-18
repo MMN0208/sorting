@@ -1,5 +1,5 @@
 # sorting
-Sorting algorithms
+Sorting Algorithms
 
 The following sorting algorithms are available: 
 
